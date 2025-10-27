@@ -7,14 +7,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the project...'
-                bat 'javac Calculator.java'
+                bat 'javac Calc.java'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                bat 'java Calculator'
+                bat 'java Calc'
             }
         }
 
